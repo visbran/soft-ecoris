@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECORIS - APP</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="https://www.ecoris.com/android-chrome-512x512.png">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="background_pop_up">
+    <div class="row pop-up" id="pop-up" hidden >
+      <div class="box small-6 large-centered">
+        <a  class="close-button">&#10006;</a>
+        <h3>INFORMATION</h3>
+        <p>Vous êtes apparemment sur un système d'exploitation autre que Windows.<br> Le téléchargement n'est pas restreint, cependant l'installation risque de ne pas aboutir.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="landscape">
+    <div class="mountain"></div>
+    <div class="mountain mountain-2"></div>
+    <div class="mountain mountain-3"></div>
+    <div class="sun-container sun-container-1"></div>
+    <div class="sun-container">
+        <div class="sun"></div>
+    </div>
+    <div class="cloud"></div>
+    <div class="cloud cloud-1"></div>
+    <div class="sun-container sun-container-reflection">
+        <div class="sun"></div>
+    </div>
+    <div class="light"></div>
+    <div class="light light-1"></div>
+    <div class="light light-2"></div>
+    <div class="light light-3"></div>
+    <div class="light light-4"></div>
+    <div class="light light-5"></div>
+    <div class="light light-6"></div>
+    <div class="light light-7"></div>
+    <div class="water"></div>
+    <div class="splash"></div>
+    <div class="splash delay-1"></div>
+    <div class="splash delay-2"></div>
+    <div class="splash splash-4 delay-2"></div>
+    <div class="splash splash-4 delay-3"></div>
+    <div class="splash splash-4 delay-4"></div>
+    <div class="splash splash-stone delay-3"></div>
+    <div class="splash splash-stone splash-4"></div>
+    <div class="splash splash-stone splash-5"></div>
+    <div class="lotus lotus-1"></div>
+    <div class="lotus lotus-2"></div>
+    <div class="lotus lotus-3"></div>
+    <div class="front">
+        <div class="stone"></div>
+        <div class="grass"></div>
+        <div class="grass grass-1"></div>
+        <div class="grass grass-2"></div>
+        <div class="reed"></div>
+        <div class="reed reed-1"></div>
+    </div>
+  </div>
+
+  <div id="scene" class="blur-in" hidden>
+    <div id="left-zone">
+      <ul class="list">
+        <li class="item">
+          <input type="radio" id="ebp" name="basic_carousel" checked="checked"/>
+          <label class="label_EBP" for="ebp">EBP 2022</label>
+          <div class="content content_EBP"><span class="picto"></span>
+            <h1>EBP 2022 GRAPHIQUE</h1>
+            <p>Utilitaire d'installation pour les divers logiciels EBP (Paie/Compta/etc...).<br>[VERSION GRAPHIQUE]</p>
+            <p>Version logiciels : 2022 | V.1.5 | GUI V.1.1</p>
+            <a class="face-button_ebp" href="https://github.com/greverdy/EBPInstaller2022/releases/download/v.1.5.0/EBP2022.exe" target="_blank" style="text-decoration: none;">
+              <div class="face-primary_ebp" style="text-decoration: none;">
+                <span class="icon fa fa-cloud"></span>
+                Télécharger
+              </div>
+              <div class="face-secondary_ebp" style="color: #D64541;">
+                <span class="icon fa fa-hdd-o"></span>
+                Taille : 19.7 MB
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="item">
+          <input type="radio" id="printer_student" name="basic_carousel"/>
+          <label class="label_printer" for="printer_student">Imprimantes Etudiants</label>
+          <div class="content content_printer"><span class="picto"></span>
+            <h1>Imprimantes Etudiants</h1>
+            <p>Executable vous permettant d'installer les imprimantes étudiantes, d'autres méthodes sont disponibles sur le dépôt.</p>
+            <p>V.2.0 | GUI V.1.0</p>
+            <a class="face-button_printer" href="https://github.com/greverdy/Printer-Student-Chy/releases/download/v.2.0.0/Printer_Student.exe" target="_blank" style="text-decoration: none;">
+              <div class="face-primary_printer" style="text-decoration: none;">
+                <span class="icon fa fa-cloud"></span>
+                Télécharger
+              </div>
+              <div class="face-secondary_printer" style="color: #F5D76E;">
+                <span class="icon fa fa-hdd-o"></span>
+                Taille : 12 Mo
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="item">
+          <input type="radio" id="mode_s" name="basic_carousel"/>
+          <label class="label_mode_s" for="mode_s">Sortir du mode S</label>
+          <div class="content content_mode_s"><span class="picto"></span>
+            <h1>Sortir du mode S</h1>
+            <p>Windows en mode S est conçu pour la sécurité et les performances, en exécutant exclusivement des applications à partir du Microsoft Store ...</p>
+            <div id="content_button">
+              <div id="left_button">
+                <a class="face-button_mode_s" href="https://support.microsoft.com/fr-fr/windows/sortie-du-mode-s-dans-windows-4f56d9be-99ec-6983-119f-031bfb28a307" target="_blank" style="text-decoration: none;">
+                  <div class="face-primary_mode_s" style="text-decoration: none;">
+                    <span class="icon fa fa-cloud"></span>
+                    Documentation
+                  </div>
+                </a>
+              </div>
+              <div id="right_button">
+                <a class="face-button_mode_s" href="ms-windows-store://switchwindows" target="_blank" style="text-decoration: none;">
+                  <div class="face-primary_mode_s" style="text-decoration: none;">
+                    <span class="icon fa fa-cloud"></span>
+                    Lancer
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <input type="radio" id="windows_update" name="basic_carousel"/>
+          <label class="label_update" for="windows_update">Windows Update</label>
+          <div class="content content_update"><span class="picto"></span>
+            <h1>Windows Update</h1>
+            <p>Windows vous permet de choisir quand et comment obtenir les dernières mises à jour, pour assurer la sécurité ...</p>
+            <div id="content_button">
+              <div id="left_button">
+                <a class="face-button_update" href="https://support.microsoft.com/fr-fr/windows/mettez-%C3%A0-jour-windows-3c5ae7fc-9fb6-9af1-1984-b5e0412c556a" target="_blank" style="text-decoration: none;">
+                  <div class="face-primary_update" style="text-decoration: none;">
+                    <span class="icon fa fa-cloud"></span>
+                    Documentation
+                  </div>
+                </a>
+              </div>
+              <div id="right_button">
+                <a class="face-button_update" href="ms-settings:windowsupdate" target="_blank" style="text-decoration: none;">
+                  <div class="face-primary_update" style="text-decoration: none;">
+                    <span class="icon fa fa-cloud"></span>
+                    Lancer
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <input type="radio" id="depot" name="basic_carousel"/>
+          <label class="label_github" for="depot">Github</label>
+          <div class="content content_github"><span class="picto"></span>
+            <h1>Code source</h1>
+            <p>Accès au dépôt comportant les codes sources des applications.</p>
+            <a class="face-button_github" href="https://github.com/greverdy/" target="_blank" style="text-decoration: none;">
+              <div class="face-primary_github" style="text-decoration: none;">
+                <span class="icon fa fa-cloud"></span>
+                Accèder
+              </div>
+              <div class="face-secondary_github" style="color: #35a6f2;">
+                <span class="icon fa fa-hdd-o"></span>
+                Code Source
+              </div>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="middle-border"></div>
+    <div id="right-zone"></div>
+  </div>
+</body>
+<script>
+  function getOS() {
+    let userAgent = window.navigator.userAgent.toLowerCase(),
+      macosPlatforms = /(macintosh|macintel|macppc|mac68k|macos)/i,
+      windowsPlatforms = /(win32|win64|windows|wince)/i,
+      iosPlatforms = /(iphone|ipad|ipod)/i,
+      os = null;
+
+    if (macosPlatforms.test(userAgent)) {
+      os = "macos";
+    } else if (iosPlatforms.test(userAgent)) {
+      os = "ios";
+    } else if (windowsPlatforms.test(userAgent)) {
+      os = "windows";
+    } else if (/android/.test(userAgent)) {
+      os = "android";
+    } else if (!os && /linux/.test(userAgent)) {
+      os = "linux";
+    }
+
+    return os;
+  }
+
+  if (getOS() != "windows"){
+    document.getElementById("pop-up").hidden = false;
+    $(function() {
+      $('.pop-up').hide();
+      $('.pop-up').fadeIn(1000);
+        $('.close-button').click(function (e) { 
+          $('.pop-up').fadeOut(700);
+          $('#scene').removeClass('blur-in');
+          $('#scene').addClass('blur-out');
+          e.stopPropagation();
+          document.getElementById("pop-up").hidden = true;
+          document.getElementById("scene").hidden = false;
+        });
+        $(document).keyup(function(e) {
+          if (e.key === "Escape") {
+            $('.pop-up').fadeOut(700);
+            $('#scene').removeClass('blur-in');
+            $('#scene').addClass('blur-out');
+            e.stopPropagation();
+            document.getElementById("pop-up").hidden = true;
+            document.getElementById("scene").hidden = false;
+          }
+        });
+    });
+  }else{
+    $('#scene').removeClass('blur-in');
+    $('#scene').addClass('blur-out');
+    document.getElementById("scene").hidden = false;
+  }
+
+</script>
+<script src="./app.js"></script>
+</html>
