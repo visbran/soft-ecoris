@@ -1476,5 +1476,212 @@ right: -2vmin;
     #right_button { float:right; } 
     
 
+}
+
+@media screen and (max-width: 500px) {
+  
+
+  .pop-up {
+    height: 200px;
+    width: 300px;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    left: 0;
+    right: 0;
+    top: -0px;
+    z-index: 2;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  #pop-up p {
+    padding: 10px 20px 5px 20px;
+    font-size: 1em;
+  }
+  .box{
+    height: 225px;
+  }
+  body #scene{
+    width: 350px;
+    height: 400px;
+  }
+  body #scene #left-zone{
+    width: 100px;
+  }
+  body #scene #left-zone .list li.item input[type=radio] ~ label {
+    line-height: 15px;
+    height: 52px;
+    font-size: 0.7em;
+    padding-top: 20px;
+  }
+  body #scene #left-zone .list li.item input[type=radio] ~ label.label_printer {
+    padding-top: 10px;
+  }
+  body #scene #left-zone .list li.item input[type=radio] ~ label.label_EBP:before {
+    content: none;
+  }
+  body #scene #left-zone .list li.item input[type=radio] ~ label.label_printer:before {
+    content: none;
+  }
+  body #scene #left-zone .list li.item input[type=radio] ~ label.label_mode_s:before {
+    content: none;
+  }
+  body #scene #left-zone .list li.item input[type=radio] ~ label.label_update:before {
+    content: none;
+  }
+  body #scene #left-zone .list li.item input[type=radio] ~ label.label_github:before {
+    content: none;
+  }
+  body #scene #left-zone .list li.item input[type=radio] ~ .content{
+    left: 100px;
+    width: 250px;
+    height: 430px;
+  }
+  body #scene #left-zone .list li.item input[type=radio] ~ .content p{
+    font-size: 0.7em;
+  }
+  body #scene #left-zone .list li.item input[type=radio] ~ .content.content_EBP .picto {
+    height: 50px;
+    width: 50px;
+  }
+  body #scene #left-zone .list li.item input[type=radio] ~ .content.content_EBP h1{
+    font-size: 1.1em;
+  }
+  body #scene #left-zone .list li.item input[type=radio] ~ .content.content_printer .picto {
+    height: 50px;
+    width: 50px;
+  }
+  body #scene #left-zone .list li.item input[type=radio] ~ .content.content_printer h1{
+    font-size: 1.1em;
+  }
+  body #scene #left-zone .list li.item input[type=radio] ~ .content.content_mode_s .picto {
+    height: 50px;
+    width: 50px;
+  }
+  body #scene #left-zone .list li.item input[type=radio] ~ .content.content_mode_s h1{
+    font-size: 1.1em;
+  }
+  body #scene #left-zone .list li.item input[type=radio] ~ .content.content_update .picto {
+    height: 50px;
+    width: 50px;
+  }
+  body #scene #left-zone .list li.item input[type=radio] ~ .content.content_update h1{
+    font-size: 1.1em;
+  }
+  body #scene #left-zone .list li.item input[type=radio] ~ .content.content_github .picto {
+    height: 50px;
+    width: 50px;
+  }
+  body #scene #left-zone .list li.item input[type=radio] ~ .content.content_github h1{
+    font-size: 1.1em;
+  }
+  .face-button_ebp{
+    margin-top: 5px;
+    height: 28px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .face-button_ebp .face-primary_ebp,
+  .face-button_ebp .face-secondary_ebp {
+    display: block;
+    padding: 0 8px;
+    line-height: 28px;
+    transition: margin 0.4s;
+  }
+  .face-button_ebp:hover .face-primary_ebp {
+    margin-top: -28px;
+  }
+
+
+  .face-button_printer{
+    margin-top: 5px;
+    height: 28px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .face-button_printer .face-primary_printer,
+  .face-button_printer .face-secondary_printer {
+    display: block;
+    padding: 0 8px;
+    line-height: 28px;
+    transition: margin 0.4s;
+  }
+  .face-button_printer:hover .face-primary_printer {
+    margin-top: -28px;
+  }
+
+
+  .face-button_mode_s{
+    margin-top: 5px;
+    height: 28px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .face-button_mode_s .face-primary_mode_s,
+  .face-button_mode_s .face-secondary_mode_s {
+    display: block;
+    padding: 0 8px;
+    line-height: 28px;
+    transition: margin 0.4s;
+  }
+  .face-button_mode_s:hover .face-primary_mode_s {
+    margin-top: -28px;
+  }
+
+
+  .face-button_update{
+    margin-top: 5px;
+    height: 28px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .face-button_update .face-primary_update,
+  .face-button_update .face-secondary_update {
+    display: block;
+    padding: 0 8px;
+    line-height: 28px;
+    transition: margin 0.4s;
+  }
+  .face-button_update:hover .face-primary_update {
+    margin-top: -28px;
+  }
+
+
+  .face-button_github{
+    margin-top: 5px;
+    height: 28px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .face-button_github .face-primary_github,
+  .face-button_github .face-secondary_github {
+    display: block;
+    padding: 0 8px;
+    line-height: 28px;
+    transition: margin 0.4s;
+  }
+  .face-button_github:hover .face-primary_github {
+    margin-top: -28px;
+  }
+
+  #content_button { 
+    overflow:auto; 
+    margin-right: auto;
+    margin-left: auto;
+    width: 220px; 
+    } 
+    
+    #left_button, #right_button { 
+    width: 40%; 
+    margin:2px; 
+    padding: 0.1em; 
+    } 
+    
+    #left_button  { float:left;  }
+    #right_button { float:right; } 
+    
+
 
 }
