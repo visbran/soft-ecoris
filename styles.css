@@ -556,6 +556,12 @@ margin-top: -48px;
 }
 
 
+*:disabled {
+  background-color: dimgrey;
+  color: linen;
+  opacity: 1;
+}
+
 .face-button_printer {
 margin-top: 20px;
 text-decoration: none;
@@ -1685,3 +1691,5 @@ right: -2vmin;
 
 
 }
+
+
