@@ -18,80 +18,45 @@
       </div>
     </div>
   </div>
-  
-  <div class="landscape">
-    <div class="mountain"></div>
-    <div class="mountain mountain-2"></div>
-    <div class="mountain mountain-3"></div>
-    <div class="sun-container sun-container-1"></div>
-    <div class="sun-container">
-        <div class="sun"></div>
-    </div>
-    <div class="cloud"></div>
-    <div class="cloud cloud-1"></div>
-    <div class="sun-container sun-container-reflection">
-        <div class="sun"></div>
-    </div>
-    <div class="light"></div>
-    <div class="light light-1"></div>
-    <div class="light light-2"></div>
-    <div class="light light-3"></div>
-    <div class="light light-4"></div>
-    <div class="light light-5"></div>
-    <div class="light light-6"></div>
-    <div class="light light-7"></div>
-    <div class="water"></div>
-    <div class="splash"></div>
-    <div class="splash delay-1"></div>
-    <div class="splash delay-2"></div>
-    <div class="splash splash-4 delay-2"></div>
-    <div class="splash splash-4 delay-3"></div>
-    <div class="splash splash-4 delay-4"></div>
-    <div class="splash splash-stone delay-3"></div>
-    <div class="splash splash-stone splash-4"></div>
-    <div class="splash splash-stone splash-5"></div>
-    <div class="lotus lotus-1"></div>
-    <div class="lotus lotus-2"></div>
-    <div class="lotus lotus-3"></div>
-    <div class="front">
-        <div class="stone"></div>
-        <div class="grass"></div>
-        <div class="grass grass-1"></div>
-        <div class="grass grass-2"></div>
-        <div class="reed"></div>
-        <div class="reed reed-1"></div>
-    </div>
-  </div>
-
   <div id="scene" class="blur-in" hidden>
     <div id="left-zone">
       <ul class="list">
         <li class="item">
-          <input type="radio" id="ebp" name="basic_carousel" checked="checked"/>
-          <label class="label_EBP" for="ebp">EBP 2022</label>
-          <div class="content content_EBP"><span class="picto"></span>
-            <h1>EBP 2022 GRAPHIQUE</h1>
-            <p>Utilitaire d'installation pour les divers logiciels EBP (Paie/Compta/etc...).<br>[VERSION GRAPHIQUE]</p>
+          <input type="radio" id="ebp_2022" name="basic_carousel" checked="checked"/>
+          <label class="label_EBP_2022" for="ebp_2022">EBP 2022</label>
+          <div class="content content_EBP_2022"><span class="picto"></span>
+            <h1>EBP 2022</h1>
+            <p>Utilitaire d'installation pour les divers logiciels EBP (Paie/Compta/etc...).</p>
             <p>Version logiciels : 2022 | V.1.5 | GUI V.1.1</p>
-            <a class="face-button_ebp" href="https://github.com/greverdy/EBPInstaller2022/releases/download/v.1.5.0/EBP2022.exe" target="_blank" style="text-decoration: none;">
+            <a class="face-button_ebp" href="https://objects.githubusercontent.com/github-production-release-asset-2e65be/576314398/e7655b05-35ad-4490-ab55-68ef8a2f2478?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230413%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230413T092656Z&X-Amz-Expires=300&X-Amz-Signature=976c5ac6ae06b83fd512828bcfe40ec226cdb16a9b1969531868311afffdd568&X-Amz-SignedHeaders=host&actor_id=99980477&key_id=0&repo_id=576314398&response-content-disposition=attachment%3B%20filename%3DEBP2022.exe&response-content-type=application%2Foctet-stream" target="_blank" style="text-decoration: none;">
               <div class="face-primary_ebp" style="text-decoration: none;">
                 <span class="icon fa fa-cloud"></span>
                 Télécharger
               </div>
               <div class="face-secondary_ebp" style="color: #D64541;">
                 <span class="icon fa fa-hdd-o"></span>
-                Taille : 19.7 MB
+                Taille : 15 Mo
               </div>
             </a>
           </div>
         </li>
         <li class="item">
-          <input type="radio" id="printer_student" name="basic_carousel"/>
-          <label class="label_printer" for="printer_student">Imprimantes Etudiants</label>
-          <div class="content content_printer"><span class="picto"></span>
-            <h1>Imprimantes Etudiants</h1>
-            <p>⚠️ Cette application n'est plus maintenue ! ⚠️ <br><br> Executable vous permettant d'installer les imprimantes étudiantes, d'autres méthodes sont disponibles sur le dépôt.</p>
-            <p>V.2.0 | GUI V.1.0</p>
+          <input type="radio" id="ebp_2023" name="basic_carousel"/>
+          <label class="label_EBP_2023" for="ebp_2023">EBP 2023</label>
+          <div class="content content_EBP_2023"><span class="picto"></span>
+            <h1>EBP 2023</h1>
+            <p>Utilitaire d'installation pour les divers logiciels EBP (Paie/Compta/etc...).<br><br><b>Une adresse Ecoris est nécessaire</b></p>
+            <p>V.1.6 | GUI V.1.2</p>
+            <a class="face-button_EBP_2023" style="text-decoration: none;">
+              <div class="face-primary_EBP_2023" style="text-decoration: none;">
+                <span class="icon fa fa-cloud"></span>
+                EN COURS DE DEVELOPPEMENT
+              </div>
+              <div class="face-secondary_EBP_2023" style="color: #F5D76E;">
+                <span class="icon fa fa-hdd-o"></span>
+                Date de sortie : 17/11/2023
+              </div>
+            </a>
           </div>
         </li>
         <li class="item">
@@ -169,6 +134,8 @@
     <div id="middle-border"></div>
     <div id="right-zone"></div>
   </div>
+
+<canvas id="canvas-club"></canvas>
 </body>
 <script>
   function getOS() {
